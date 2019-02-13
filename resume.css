@@ -1,0 +1,70 @@
+p{
+    font-size: 15px;
+    font-family: Arial;
+    color:  #041C62;
+
+}
+
+main{
+    border: black;
+    border-width: 10px;
+    background-color: #A37333;
+    max-width: 60%;
+
+}
+li{
+    font-size: 15px;
+    font-family: Arial;
+    color:  #041C62;
+}
+a{
+    color: #041C62;
+}
+a:hover{
+    color:#B7153B
+}
+
+.job{
+    font-size: 15px;
+    font-family: Arial;
+    color:  #041C62;
+}
+
+.subtitle{
+
+    font-family: Arial;
+    color:  #041C62;
+}
+.adr{
+    float: right;
+}
+.email{
+    float: right;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hcard-Robert-Erickson{
+    margin: auto;
+    padding: 2%;
+    border-width: 10px;
+}
+#name{
+    padding-left: 65%;
+    text-decoration: none;
+}
