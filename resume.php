@@ -1,75 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Resume Template Exercise</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Robert Erickson">
-    <meta name="description" content="Trying to help students out with getting a resume online">
+    <!-- The purpose of this document is to provide a template for you to follow.
+    Your resume will be two files, this one resume_template.html to help you to
+    define the CONTENT for your resume and resume.css to help you to define the
+    LOOK of your resume. I will try to put a comment tag pointing out the places
+    you should fill out with your own content. Most should seem obvious.
+    -->
 
-    <link rel="stylesheet"
-          href="style.css"
-          media="screen">
+    <!-- **** you need to put in y our own title below -->
+    <title>Your Name (this will show up as the google link)</title>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
-    <![endif]-->
+    <meta http-equiv="Content-Type" content="charset=utf-8" >
 
+    <!-- **** you need to in your own description in the content below -->
+    <meta name="description" content="This is what shows up as a google description so sell yourself!" >
+
+    <!-- **** you need to in your name in the content below -->
+    <meta name="author" content="Your Name" >
+
+    <!-- **** the href below is the name of your style sheet that will define the
+    look for your resume. -->
+
+
+    <link href='css/rerickso/sample2.css' rel='stylesheet' type='text/css' media='screen' />
+
+    <link href='css/rerickso/print.css' rel='stylesheet' type='text/css' media='print' />
 </head>
-
 <body id="resume">
-<h1>Prepare a Resume web page</h1>
+<main>
+    <!-- *************   Your personal information ***************************  -->
+    <!-- **** change the id here and in the style sheet to  your name -->
+    <section id="hcard-Robert-Erickson" class="vcard">
 
-<p>Getting that first job</p>
-<ol>
-    <li>Prepare a resume which is what this page is about.</li>
-    <li>Visit a career office (<a href='http://www.uvm.edu/~career/'>UVM Career Center</a>).</li>
-    <li>Get that Job!</li>
-</ol>
-<p>So now that you have a few classes under your belt its time to get a summer job in the  field of your major! Before you start contacting companies you need to have a resume. Now I firmly believe everyone's resume should reflect the persons personality. Now having said that I want to provide a template for you to have your resume posted on the web. The purpose of this resume template is to get you started. I hope you will design a really neat style sheet and email it to me so i can use it as an <a href="samples.html">example</a>!
+        <!-- ****  Of course link to your photo and change the alt description -->
+        <p id="myImage"><!-- placeholder to put image as background if you want to --></p>
 
-<p>You will need to understand a little html coding (try <a href="http://www.w3schools.com/html/default.asp">w3schools</a>, also check out their <a href="http://www.w3schools.com/css/default.asp">CSS</a> tutorials) but you should not have any trouble learning this. Look at the resume, View the source and save the source to your public_html folder. You can use any text editor, html editor or word processor to edit this template. I suggest you save the template as resume.html as it just makes sense to do so.</p>
+        <!-- ****  put in  your name and your url -->
+        <h1 id="name"><a class="url fn" href="http://www.uvm.edu/~rerickso">Robert Erickson</a></h1>
 
 
-<h2>Three simple steps.</h2>
-<ol>
-    <li>Copy the html template: <a href="resume_template.html">Resume Template</a></li>
-    <li>Copy the css template: <a href="css_template.html">CSS Template</a></li>
-    <li><a href="change.html">Change the content</a></li>
-</ol>
+        <!-- ****  in all the following span tags put in your address info -->
+        <p class="adr">
+            <span class="street-address">331 Votey</span>,
+            <span class="locality">Burlington</span>,
+            <span class="region">Vermont</span>,
+            <span class="postal-code">05405</span>
+            <span class="country-name">USA</span>
+        </p>
 
-<p>It does include <a href="http://microformats.org/">MicroFormats</a> that allow other applications to make sense of your data (for example <a href="http://www.linkedin.com/">LinkedIn</a> uses micro-formats).</p>
+        <p class="email">
+            <span class="type">Email: </span>
 
-<h2>General Resume Concepts</h2>
+            <!-- ****  notice you need to put your address in twice, once for the link and
+            once to display -->
+            <span class="value"><a class="email" href="mailto:robert.erickson@uvm.edu">robert.erickson@uvm.edu</a></span>
+        </p>
 
-<p>Some pointers can be found at: <a href="http://www.uvm.edu/~career/?Page=resume.html&SM=jobsubmenu.html">uvm career services.</a></p>
+        <!-- ****  type in your contact numbers, delete extra, copy if you need more -->
+        <p class="tel">
+            <span class="type">Cell: </span>
+            <span class="value">1.802.656.8137</span>
+        </p>
 
-<p>If your GPA is less than 3.0 don't list it.
+        <p class="tel">
+            <span class="type">Work: </span>
+            <span class="value">1-802-656-8137</span>
+        </p>
 
-<p>I have a list of classes that I have taken. This is to help you fill a piece of paper. As you gain experience this section can be eliminated. Listing your courses also helps to give you some common ground when you go for an interview as the person interviewing will often ask about a particular class. Never list a course number or title but a general title. For example if you have taken CS 265 (Computer Networks) you can list:
+    </section>  <!-- ends vcard -->
 
-<ul>
-    <li>Computer Networks
-    <li>Networks
-</ul>
+    <!--
+    the main code above was modified from the generator found below.
+    This <a href="http://microformats.org/wiki/hcard">hCard</a> created with
+    the <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.
+    ***********  end of personal information ********************************** -->
 
-<p>but never list:
 
-<ul>
-    <li>CS 265
-    <li>CS 265 Computer Networks
-</ul>
+    <!-- This section is for work that you do that is directly related to your
+    career. Internships, projects etc.  if you do not have any GET some, till then
+    just comment this section out ********************* -->
+    <section id="profExperience">
+        <h2>Professional Experience</h2>
 
-<p>The course number is irrelevant, it only means something to someone here at UVM. If you have the room I would put <b>Computer Networks</b> but computers would be assumed so if you need to save space you can get away with <b>Networks</b>.
+        <!-- **** notice the comments for a job, to have more than one copy from Begin
+        job  to end of job and replace the text as needed. They list the most recent first
 
-<p>Ok now a very important part of your resume is the work experience which should be ordered with most recent first. Having any job is always good to put down as it shows the employer that this person has had a job before. It is even better if the job happens to be in your field. I always recommend to students to get a summer job in their field starting after there first year of education! Sometimes that may not be possible because you just can't find one so try again your 2nd summer and by all means your 3rd summer better be a job in your field. If you can take the summer after you graduate off and start your new job in September if you can get away with it :)
+        change the id coName to the name of the	company HERE and in the
+        STYLE SHEET if you want to style it.
 
-<p>Ok now any job you have says something and you have to be sure you put it down. If you were a waiter/waitress put down how many tables you had and how many meals you served a night (this shows how much stress you can handle and how much you can juggle around in your head). I see lots of resumes and I say the same thing to everyone, expand that description of that job! How many people did you work with or manage or deal with, did you work independently mowing lawns (i.e. the boss dropped you off and said mow these 10 lawns this morning) which would show a prospective employer that you can work on your own.
+        use google maps, yahoo maps or anyone you like. its neat to click on it to
+        see the building.
+        -->
 
-<p>You should see the job block can be copied as many times as needed.
+        <!-- Begin job -->
+        <ol>
+            <li class="job" id="coName">
+                <span class="dates">1991 - present</span>
+                <a href="http://www.uvm.edu" class="company">University of Vermont</a>,
 
-<p>Interests always seem to show on a resume and I have been told this is to show the employer that you are a human being with varied interests, plus if the interviewer is interested in the same thing you can talk about it. The interview process is in it self a whole other matter. Keep in mind that while you are in sight of the interviewees you are being interviewed (when you walk away they may watch you walk across the parking lot to see your reactions). The best interviewers will get you to talk to them as if you were their best friend.
+                <!-- notice i change the google maps url. everyplace it has a & made it &amp; so it would
+                validate -->
+                <a href="http://maps.google.com/maps?q=+colchester+ave%2C+Burlington%2C+VT+05401%2C+United+States&amp;l=explore&amp;utm_campaign=en&amp;utm_medium=ha&amp;utm_source=en-ha-na-us-gns-lt&amp;utm_term=searchbox&amp;submit.x=116&amp;submit.y=23&amp;submit=Explore+this+place"
+                   class="location">Burlington, VT</a>
 
-<p>Well I guess that is about all I have to say, so good luck with your resume.
+                <span class="jobtitle">Senior Lecturer.</span>
 
+                <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </li><!-- end of this job -->
+
+
+            <!-- past other jobs here, descending by dates -->
+
+
+
+            <!-- list web sites and projects here -->
+            <li class="job" id="workExamples"><span class="dates">1995 - present</span>
+                Websites and Projects
+                <ul class="websites">
+                    <li><a href="http://www.yoursite.com">name of site</a> short description</li>
+                    <li><a href="http://www.yoursite.com">name of site</a> short description</li>
+                </ul>
+            </li>
+            <!-- end web sites and projects -->
+
+        </ol>
+    </section> <!-- end of your Experience-->
+
+
+    <!-- Skill set section *********************************************-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+        </ul>
+    </section> <!-- ends skill sets -->
+
+    <!-- Education section *********************************************
+
+    only list college education (high school education is not needed.
+    Always list most recent first
+
+    change the id to the abbreviation for the school.
+
+    -->
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <ol>
+            <li class="school" id="uvm">
+                <span class="dates">2008 - 2012</span>
+                <a href="http://www.uvm.edu" class="institution">University of Vermont</a>,
+                <a href="http://maps.google.com/maps?q=+colchester+ave%2C+Burlington%2C+VT+05401%2C+United+States&amp;l=explore&amp;utm_campaign=en&amp;utm_medium=ha&amp;utm_source=en-ha-na-us-gns-lt&amp;utm_term=searchbox&amp;submit.x=116&amp;submit.y=23&amp;submit=Explore+this+place"
+                   class="location">Burlington, VT</a>
+
+                <span class="MajorDegree">Your Major</span>
+                <span class="MinorDegree">Minor</span>
+                <span class="gpa">Cumulative GPA 4.0 (4.0)</span>
+
+                <!-- List the most important courses for your major that you have taken (or will take). This gives you some common ground when interviewing and something to talk about. list the NAME not the number. If there is a link for your course put it in but be sure the link will always
+                be available. -->
+                <h3 class="subtitle">Course of Study </h3>
+                <ul class="courses major">
+                    <li><a  href="http://giraffe.uvm.edu/rg-bin/rg_section_data.cgi?200801+10783">MS Office Beyond the Basics</a></li>
+                    <li>Database Design</li>
+                    <li>Digital Revolution</li>
+                    <li>Human Factors</li>
+                    <li>Software Design</li>
+                </ul>
+
+
+                <ul class="courses minor">
+                    <li>Elements of Drawing</li>
+                    <li>Archery</li>
+                    <li>Marksmanship</li>
+                </ul>
+            </li> <!-- end school  -->
+
+            <!-- add another school here if you attended more than one. Same as with Experience
+            just copy and paste the code changing the relevant info. -->
+
+
+
+        </ol>
+    </section> <!-- end education -->
+
+
+    <!-- Work History ***************************************************
+    This is just what you have been doing to make money, if it is related to your profession then it belongs up above in professional Experience.
+
+    Your work history goes here with the most recent first. However, if the work is related to your major then it belongs above in Professional Experience, if they were just jobs to help pay your way, list them here as Work Experience. this is the same as professional
+    experience only the work is not related to your career but shows that you can work  -->
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <!-- Begin job -->
+
+        <ol>
+            <li class="job">
+                <span class="dates">beginning year - present</span>
+                <a href="http://www.uvm.edu" class="company">Company</a>,
+                <a href="http://maps.google.com/" class="location">City, State</a>
+
+                <span class="jobtitle">Job Title</span>
+
+                <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </li><!-- end of this job -->
+
+            <!-- past other jobs here descending by dates -->
+
+
+        </ol>
+    </section> <!-- end of your Experience-->
+
+    <!-- Interests section *************************************************
+    You have to have something that interests you. This is to let everyone know that you have a life beyond working. -->
+    <section id="interests">
+        <h2>Interests</h2>
+        <ol>
+            <li class="int">what else do you like that makes you a well rounded person?</li>
+        </ol>
+    </section> <!-- ends interests -->
+
+</main>
 </body>
 </html>
