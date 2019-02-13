@@ -10,6 +10,8 @@ main{
     border-width: 10px;
     background-color: #A37333;
     max-width: 60%;
+    padding: 1em;
+    
 
 }
 li{
@@ -22,6 +24,9 @@ a{
 }
 a:hover{
     color:#B7153B
+}
+section{
+    margin: auto;
 }
 
 .job{
@@ -36,11 +41,10 @@ a:hover{
     color:  #041C62;
 }
 .adr{
-    float: right;
+    padding-left: 65%;
 }
-.email{
-    float: right;
-    clear: both;
+.type{
+  padding-left: 65%;
 }
 
 
@@ -63,8 +67,31 @@ a:hover{
     margin: auto;
     padding: 2%;
     border-width: 10px;
+    background-color: #C7924D;
 }
 #name{
     padding-left: 65%;
     text-decoration: none;
+}
+#myImage{
+    float: left;
+    image: url("https://mjhallig.w3.uvm.edu/cs008/IMG_3288.JPG");
+}
+#profExperience{
+    margin: auto;
+
+    background-color: #C7924D;
+}
+
+#skills{
+    background-color: #C7924D;
+}
+#education{
+    background-color: #C7924D;
+}
+#experience{
+    background-color: #C7924D;
+}
+#interests{
+    background-color: #C7924D;
 }
