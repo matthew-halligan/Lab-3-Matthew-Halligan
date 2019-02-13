@@ -11,7 +11,7 @@ main{
     background-color: #A37333;
     max-width: 60%;
     padding: 1em;
-    
+
 
 }
 li{
@@ -94,4 +94,8 @@ section{
 }
 #interests{
     background-color: #C7924D;
+}
+#myImage{
+    width: 1em;
+    height: auto;
 }
